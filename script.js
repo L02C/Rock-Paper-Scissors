@@ -14,7 +14,7 @@ function checkscore() {
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML = (`Click 'New Game' to play again.`);
+      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
 
     else if (computerScore == playerScore) {
@@ -22,7 +22,7 @@ function checkscore() {
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML = (`Click 'New Game' to play again.`);
+      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
 
     else if (computerScore > playerScore) {
@@ -30,7 +30,7 @@ function checkscore() {
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML = (`Click 'New Game' to play again.`);
+      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
   }
 };
