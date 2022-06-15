@@ -10,27 +10,24 @@ function computerPlay() {
 function checkscore() {
   if (playerScore == 5 || computerScore == 5) {
     if (playerScore > computerScore) {
-      main_message.innerHTML = (`Congratulations! You won this game of Rock Paper Scissors.`);
+      main_message.innerHTML = (`Congratulations! You won this game of Rock Paper Scissors. Click 'New Game' to play again.`);
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
 
     else if (computerScore == playerScore) {
-      main_message.innerHTML = (`You tied this game of Rock Paper Scissors.`);
+      main_message.innerHTML = (`You tied this game of Rock Paper Scissors. Click 'New Game' to play again.`);
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
 
     else if (computerScore > playerScore) {
-      main_message.innerHTML = (`Sorry! You lost this game of Rock Paper Scissors.`);
+      main_message.innerHTML = (`Sorry! You lost this game of Rock Paper Scissors. Click 'New Game' to play again.`);
       rock_btn.removeEventListener("click", rock);
       paper_btn.removeEventListener("click", paper);
       scissors_btn.removeEventListener("click", scissors);
-      round_message.innerHTML += (` Click 'New Game' to play again.`);
     }
   }
 };
